@@ -14,11 +14,11 @@ function Navbar() {
 
   const linkRef = useRef(null);
 
-  const handleButtonClick = () => {
+/*   const handleButtonClick = () => {
     if (linkRef.current) {
       linkRef.current.click();
     }
-  };
+  }; */
 
   return (
     <>
@@ -39,14 +39,13 @@ function Navbar() {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link onClick={handleButtonClick} to='/'>Market</Link>
-                  <a ref={linkRef} href="#market" ></a>
+                  <a ref={linkRef} href="#market">Market</a>
                 </li>
                 <li>
-                  <Link to="/#choose">Choose Us</Link>
+                  <a ref={linkRef} href="#choose">Choose Us</a>
                 </li>
                 <li>
-                  <Link to="/#join">Join</Link>
+                <a ref={linkRef} href="#join">Join</a>
                 </li>
             </ul>
           </div>

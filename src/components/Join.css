@@ -1,21 +1,24 @@
-.container-hero{
+.container-join{
     display:flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
 }
 
-.hero-gradient{
+.join-gradient{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(25deg, #f39b2f, #F3BA2F);
 }
 
-.header-hero{
-    font-size: 30px;
+.join-hero{
     display: flex;
+    font-size: 30px;
     margin-top: 1rem;
     align-items:center;
+    justify-content: center;
 }
 
 .btc-float{
@@ -70,13 +73,32 @@
     font-size: 22PX;
 }
 
-.container-hero p{
+.join-text{
     text-align: center;
 }
 
+.yellowButton{
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    background: linear-gradient(25deg, #f39b2f, #F3BA2F);
+    color: black;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 720px) {
-    .header-hero{
-        font-size: 20px;
+    .header-join{
+        font-size: 45px;
+        text-align: center;
+        justify-content: center;
+    }
+    .join-hero{
+        font-size: 30px;
+        margin-top: 1rem;
+        align-items:center;
     }
     .btc-float{
         display: none;
