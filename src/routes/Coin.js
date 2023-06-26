@@ -1,16 +1,20 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import DOMPurify from 'dompurify';
 
 import './Coin.css';
+import Navbar from '../components/Navbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCircleArrowLeft} from '@fortawesome/free-solid-svg-icons';
+
 
 const Coin = () => {
   const params = useParams()
   const [coin, setCoin] = useState({})
 
   const url = `https://api.coingecko.com/api/v3/coins/${params.coinID}`
-  
+
   useEffect(() => {
     axios.get(url).then((response) => {
       setCoin(response.data)
@@ -27,10 +31,14 @@ const Coin = () => {
 
   return (
     <div>
+      <Navbar/>
       <div className='coin-container'>
-        <div className='content'>
-          <h1>{coin.name}</h1>
-        </div>
+          <div className='back-container'>
+            <Link to='/'>
+              <FontAwesomeIcon icon={faCircleArrowLeft} className='icon-back-container' style={{color: "#ffffff",}} />
+            </Link>
+            <h1>{coin.name}</h1>
+          </div>
         <div className='content'>
           <div className='rank'>
             <span className='rank-btn'>Rank # {coin.market_cap_rank}</span>

@@ -9,6 +9,28 @@
     border-radius: 8px;
 }
 
+.back-container{
+    max-width: 740px;
+    margin: 1rem auto;
+    padding: .7rem 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #26272b;
+    box-shadow: 0px 0px 12px #18191b;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.back-container h1{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.icon-back-container{
+    font-size: 35px;
+}
+
+
 .rank{
     margin: .5 0;
 }
@@ -74,12 +96,23 @@ th {
     color: #d3d3d3;
 }
 
+.about{
+    padding-bottom: 20px;
+}
+
 .about h3 {
     margin: 1rem 0;
 }
 
+
 @media screen and (max-width: 700px){
     .coin-container .content{
+        max-width: 100%;
+        margin: .5rem;
+        padding: 0 .5rem;
+        padding-top: 1rem;
+    }
+    .back-container{
         max-width: 100%;
         margin: .5rem;
         padding: 0 .5rem;

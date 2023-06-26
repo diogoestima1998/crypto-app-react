@@ -1,0 +1,27 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 5rem;
+}
+
+.pagination button {
+    margin: 10px 25px;
+    padding: 10px;
+    width:100px;
+    background-color: #26272b;
+    box-shadow: 0px 0px 12px #18191b;
+    border-radius: 8px;
+    color: aliceblue;
+}
+
+
+.pagination .active {
+font-weight: bold;
+}
+
+.textpagination span{
+    margin-left: 20px;
+    margin-right: 20px;
+}
