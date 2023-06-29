@@ -55,6 +55,10 @@ img{
     font-size: 30px;
 }
 
+.pagination__button{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 720px) {
     .hide-mobile{
         display: none;

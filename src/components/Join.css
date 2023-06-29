@@ -87,6 +87,12 @@
     border-radius: 10rem;
     transition: all 0.2s;
     font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.yellowButton:hover{
+    transform: scale(1.1)
 }
 
 @media screen and (max-width: 720px) {

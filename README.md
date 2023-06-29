@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![Description of the image](./src/images/crypto.png)
+
 ## Available Scripts
 
 In the project directory, you can run:

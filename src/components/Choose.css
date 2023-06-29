@@ -15,6 +15,11 @@
     box-shadow: 0px 0px 6px #18191b;
     border-radius: 8px;
     padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.1)
 }
 
 .icon-choose{

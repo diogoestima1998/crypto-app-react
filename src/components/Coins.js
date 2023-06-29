@@ -65,13 +65,13 @@ const Coins = (props) => {
                 })}
             </div>
             <div className="pagination">
-                <button onClick={goToPreviousPage} disabled={currentPage === 1}>
-                <FontAwesomeIcon icon={FaArrowLeft} style={{color: "aliceblue",}} />
+                <button className='pagination__button' onClick={goToPreviousPage} disabled={currentPage === 1}>
+                <FontAwesomeIcon icon={FaArrowLeft} style={{color: "aliceblue"}} />
                 &nbsp;
                 Previous
                 </button>
                 <span className='textpagination'>Page {currentPage}</span>
-                <button onClick={goToNextPage} disabled={currentPage === totalPages}>
+                <button className='pagination__button' onClick={goToNextPage} disabled={currentPage === totalPages}>
                 Next
                 &nbsp;
                 <FontAwesomeIcon icon={FaArrowRight} style={{color: "aliceblue",}} />
