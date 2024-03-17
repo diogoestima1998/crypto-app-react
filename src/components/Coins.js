@@ -11,8 +11,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import axios from 'axios';
 import Join from './Join';
 import Choose from './Choose';
-
-
+import TradingViewWidget from './TradingViewWidget';
 const Coins = (props) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
@@ -44,6 +43,9 @@ const Coins = (props) => {
     <>
         <Navbar />
         <Hero/>
+        <div className='container' style={{height: "600px"}}>
+          <TradingViewWidget/>
+        </div>
         <div id="market" className='container'>
             <h1 className='coins-header'>Crypto Prices:</h1>
             <div>
