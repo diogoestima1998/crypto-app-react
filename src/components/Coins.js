@@ -46,6 +46,12 @@ const Coins = (props) => {
         <div className='container' style={{height: "600px"}}>
           <TradingViewWidget/>
         </div>
+        <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+          <iframe id="dextswap-aggregator-widget"
+            title="DEXTswap Aggregator"
+            width="400"
+            height="420" src="https://www.dextools.io/widget-aggregator/en/swap/eth/0xfb7b4564402e5500db5bb6d63ae671302777c75a"></iframe>
+        </div>
         <div id="market" className='container'>
             <h1 className='coins-header'>Crypto Prices:</h1>
             <div>
